@@ -1,8 +1,8 @@
  public class Listing {
-    private String host_location;
-    private int host_id;
-    private double listing_area;
-    private String type_of_listing;
+    protected String host_location;
+    protected int host_id;
+    protected double listing_area;
+    protected String type_of_listing;
 
 
     /**

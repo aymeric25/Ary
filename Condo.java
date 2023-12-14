@@ -15,6 +15,16 @@ public class Condo extends Listing {
         this.number_of_units = number_of_units;
         this.num_of_floors = num_of_floors;
     }
+    public int getNum_of_units(){
+        return this.number_of_units;
+    }
 
+    public int getNum_of_floors(){
+        return this.num_of_floors;
+    }
     
+    @Override
+    public String toString(){
+        return "number of units : " + this.number_of_units + " number of floors : " + this.num_of_floors; 
+    }
 }
