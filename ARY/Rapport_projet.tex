@@ -13,6 +13,7 @@
   basicstyle=\ttfamily,
   numbers=left,
   numberstyle=\tiny,
+  keywordstyle = \color{green},
   frame=single,
   breaklines=true,
   columns=fullflexible,
@@ -46,8 +47,9 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
         `num_of_floors` INT NOT NULL,
         PRIMARY KEY (`host_id`))
       ENGINE = InnoDB;
-      
-      
+    \end{lstlisting}
+
+    \begin{lstlisting}
       -- -----------------------------------------------------
       -- Table `mydb`.`Co_op`
       -- -----------------------------------------------------
@@ -57,8 +59,10 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
         `num_of_co` INT NOT NULL,
         PRIMARY KEY (`host_id`))
       ENGINE = InnoDB;
-      
-      
+    \end{lstlisting}
+
+
+    \begin{lstlisting}
       -- -----------------------------------------------------
       -- Table `mydb`.`House`
       -- -----------------------------------------------------
@@ -68,8 +72,10 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
         `construction_year` INT NOT NULL,
         PRIMARY KEY (`host_id`))
       ENGINE = InnoDB;
-      
-      
+    \end{lstlisting}
+
+
+    \begin{lstlisting}
       -- -----------------------------------------------------
       -- Table `mydb`.`Listing`
       -- -----------------------------------------------------
@@ -101,8 +107,9 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
           ON DELETE NO ACTION
           ON UPDATE NO ACTION)
       ENGINE = InnoDB;
-      
-      
+    \end{lstlisting}
+
+    \begin{lstlisting}
       -- -----------------------------------------------------
       -- Table `mydb`.`Host`
       -- -----------------------------------------------------
@@ -120,8 +127,9 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
           ON DELETE NO ACTION
           ON UPDATE NO ACTION)
       ENGINE = InnoDB;
-      
-      
+    \end{lstlisting}
+
+    \begin{lstlisting}
       -- -----------------------------------------------------
       -- Table `mydb`.`User`
       -- -----------------------------------------------------
@@ -139,7 +147,6 @@ Ce qui une fois converti en une requête \textbf{SQL} nous donne:
           ON DELETE NO ACTION
           ON UPDATE NO ACTION)
       ENGINE = InnoDB;
-      
     \end{lstlisting}
 \chapter{Implementation du code en JAVA}
 \end{document}
