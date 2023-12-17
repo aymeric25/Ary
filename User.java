@@ -1,16 +1,21 @@
  public class User {
-    protected int user_id;
+    private static int lastUserId = 0;
+
+    private int user_id;
     private String name;
     private String firstname;
-    private String userEmail; 
+    private String userEmail;
 
-    public User (int user_id, String name, String firstname, String userEmail){
+    public User(String name, String firstname, String userEmail) {
+        this.user_id = ++lastUserId; // Increment and assign the new user_id
         this.firstname = firstname;
         this.name = name;
-        this.user_id = user_id;
         this.userEmail = userEmail;
     }
 
+    public static int getLastUserId() {
+        return lastUserId;
+    }
     //first we are making getter functions 
 
     public String getName(){
@@ -36,16 +41,15 @@
     public void setFirstname(String f){
         this.firstname = f;
     }
-    public void setUser_id(int u){
-        this.user_id = u;
-    }
-
+    
     public void setEmail(String email){
         this.userEmail = email;
     }
 
+    
+
     public String toString(){
-        return "User ID : " + this.user_id + " Name : " + this.name + " Firstname : " + this.firstname;
+        return " Name : " + this.name + " Firstname : " + this.firstname;
     }
 
 

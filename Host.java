@@ -6,8 +6,8 @@ public class Host extends User {
     private ArrayList <Listing> hosts_listings;
      
 
-    public Host(int user_id, String name, String firstname,String userEmail,ArrayList <Double> ratings, int num_of_listings, ArrayList <Listing> hosts_listings){
-        super(user_id, name, firstname,userEmail);
+    public Host(String name, String firstname,int user_id,String userEmail,ArrayList <Double> ratings, int num_of_listings, ArrayList <Listing> hosts_listings){
+        super(name, firstname,userEmail);
         this.num_of_listings = num_of_listings;
         this.ratings = new ArrayList<Double>();
         this.hosts_listings = new ArrayList<Listing>();
@@ -40,7 +40,7 @@ public class Host extends User {
      */
     @Override
     public String toString(){
-        return "ID Host : " + this.user_id + "number of listings : " + this.num_of_listings + "Host's average rating : " + this.ratings;
+        return  "number of listings : " + this.num_of_listings + "Host's average rating : " + this.ratings;
     }
 
     //faire la fonction de calcul de la moyenne 
